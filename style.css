@@ -1,0 +1,135 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color:#070f2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.second,
+.hour,
+.minute {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.2);
+}
+
+#second-hand,#min-hand,#hour-hand{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top:-25px;
+
+}
+#second-hand{
+    background-image: url('moon.jpg');
+    background-position: center;
+    background-size: 60px;
+    box-shadow:0px 5px 13px 0px rgba(255,255,255,0.2), inset 0 10px 5px 0px rgba(0,0,0,0.6);
+   
+}
+#min-hand{
+    background-image: url('earth.webp');
+    background-position: center;
+    background-size: 63px;
+    box-shadow:0px 5px 13px 0px rgba(255,255,255,0.2), inset 0 10px 10px 0px rgba(0,0,0,0.3);
+   
+}
+#hour-hand{
+    background-image: url('sun1.jpg');
+    background-position: center;
+    background-size: 110px;
+    box-shadow:0px 0px 11px 0px #ffc100, inset 0 0 1px 0px #ffc100;
+   
+}
+
+
+.time-show {
+   width: 20vh;
+   height: 20vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size:2.5em;
+    z-index: 4;
+    color: rgba(255,255,255,0.2);
+    font-family: Impact;
+    font-weight: lighter;
+}
+
+.second {
+    width: 80vh;
+    height: 80vh;
+    border-radius: 50%;
+    z-index: 1;
+    transition: transform 1s linear ;
+    border:2px solid rgba(255,255,255,0.2);
+}
+
+
+
+#handMin {
+    width: 55vh;
+    height: 55vh;
+    border:2px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+    z-index: 2;
+    transition: transform 1s linear ;
+}
+
+#handHr {
+    width: 30vh;
+    height: 30vh;
+    border:2px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+    z-index: 3;
+    transition: transform 1s linear ;
+} 
+
+.star{
+    position: absolute;
+    background-color: rgba(255,255,255);
+    box-shadow: 0 0 10px 0px rgba(255,255,255,0.5);
+    border-radius: 50%;
+    
+}
+
+
+#changeTheme{
+    position: absolute;
+    right:10px;
+    top: 10px ;
+    color:rgba(255, 255, 255, 0.594);
+    border: 1px solid;
+    padding:3px;
+    border-radius: 3px;
+    background-color: transparent;
+    transition: all 1s;
+}
+#changeTheme:hover{
+    background-color:rgba(255, 255, 255, 0.594) ;
+    color:#070f2b;
+    
+}
